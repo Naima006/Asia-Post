@@ -51,8 +51,8 @@
 
                 <div class="header-logo">
 
-                    <a href="/">
-                        <img src="/logo.png" alt="Asia Post Logo">
+                    <a href="">
+                        <img src="logo.png" alt="Asia Post Logo">
                     </a>
 
                 </div>
@@ -70,8 +70,8 @@
 
                     <!-- Language Link -->
                     <a href="/english" class="text-decoration-none text-dark fw-semibold fs-5">
-                        <span class="desktop-text">English</span>
-                        <span class="mobile-text">EN</span>
+                        <span class="desktop-text text-secondary-custom">English</span>
+                        <span class="mobile-text text-secondary-custom">EN</span>
                     </a>
                 </div>
 
@@ -1012,7 +1012,7 @@
             </div>
 
             <!-- Right Column (List of small articles) -->
-            <div class="col-md-3">
+            <div class="col-md-3 border-left-only">
                 <div class="list-group list-group-flush">
                     <!-- Repeated list items -->
                     <a href="#" class="list-group-item px-0 border-0 group d-flex gap-3">
@@ -1257,26 +1257,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
   <script>
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    const scrollToTopBtn = document.querySelector('#scrollToTopBtn');
 
-    // Initially hide the button
-    scrollToTopBtn.style.display = "none";
-
+    window.addEventListener('scroll', () => {
     // Show button after scrolling down 300px
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        scrollToTopBtn.style.display = "flex";
-      } else {
-        scrollToTopBtn.style.display = "none";
-      }
+    if (window.scrollY > 300) {
+        scrollToTopBtn.style.display = 'flex';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
     });
 
-    // Scroll to top on click
-    scrollToTopBtn.addEventListener("click", () => {
-      window.scrollTo({
+    // Smooth scroll to top when clicked
+    scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
         top: 0,
-        behavior: "smooth"
-      });
+        behavior: 'smooth'
+    });
     });
   </script>
 
