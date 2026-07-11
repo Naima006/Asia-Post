@@ -50,6 +50,10 @@ header.site-header {
 .bold-headline {
     text-shadow: 0.35px 0 0 #484848, -0.35px 0 0 #484848;
 }
+.bold-headline:hover {
+    color: #0b51c5;
+    text-shadow: 0.35px 0 0 #0b51c5, -0.35px 0 0 #0b51c5;
+}
 
 .navbar-nav {
     display: flex;
@@ -525,7 +529,7 @@ main.main-content.py-4 {
 
 /* Aspect ratio for uniform grid look */
 .col-6 img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: auto;
     object-fit: cover;
     width: 100%;
 }
@@ -576,13 +580,6 @@ img.img-fluid {
     border-color: #d1d5dc !important;
 }
 
-.text-secondary-custom0 {
-    color: #464646 !important;
-    font-weight: 900;
-    font-size: 22px;
-
-}
-
 .text-secondary-custom {
     color: #464646 !important;
     text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
@@ -590,8 +587,12 @@ img.img-fluid {
     font-size: 28px;
 
 }
-.text-secondary-custom:hover{
-   color: #0d6efd !important;
+
+.text-secondary-custom0 {
+    color: #464646 !important;
+    font-weight: 900;
+    font-size: 22px;
+
 }
 
 .text-secondary-custom1{
@@ -615,9 +616,18 @@ img.img-fluid {
     font-size: 16px;
 }
 
-
 .text-muted-custom {
     color: #cccccc !important;
+}
+
+.text-secondary-custom:hover{
+   color: #0d6efd !important;
+}
+.text-secondary-custom1:hover{
+   color: #0d6efd !important;
+}
+.text-secondary-custom2:hover{
+   color: #0d6efd !important;
 }
 
 /* Hover effect to match the site's primary blue */
@@ -1089,9 +1099,1271 @@ h3.fw-bold {
     font-size: 1.5rem;
 }
 
-/* ===============================
-   Photo Story Section Styles
-=============================== */
+
+/*==========================================================
+                    BANGLADESH
+==========================================================*/
+
+.bangladesh-section{
+
+    margin:50px 0;
+
+}
+
+.bangladesh-heading{
+
+    border-top:1px solid #dcdcdc;
+
+    padding-top:14px;
+
+    margin-bottom:28px;
+
+}
+
+.bangladesh-heading h2{
+
+    margin:0;
+    line-height:1.1;
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 900;
+    font-size: 28px;
+
+}
+
+/*==========================
+        LAYOUT
+==========================*/
+
+.bangladesh-content{
+
+    align-items:flex-start;
+
+}
+
+.bangladesh-left-column{
+
+    border-right:1px solid #d9d9d9;
+
+    padding-right:22px;
+
+}
+
+.bangladesh-right-column{
+
+    padding-left:22px;
+    padding-right: 22px;
+    padding-top: 10px;
+
+}
+
+/*==========================================================
+                FEATURED STORY
+==========================================================*/
+
+.bangladesh-feature{
+
+    margin-bottom:24px;
+
+}
+
+.bangladesh-feature-title{
+
+    line-height:1.42;
+    margin-bottom:24px;
+    transition:.2s;
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 700;
+    font-size: 29px;
+
+}
+
+.bangladesh-feature:hover .bangladesh-feature-title:hover{
+
+    color:#1d5fd2 !important;
+
+}
+
+/*========================*/
+
+.bangladesh-feature-body{
+
+    display:flex;
+
+    gap:22px;
+
+    align-items:flex-start;
+
+}
+
+.bangladesh-feature-text{
+
+    flex:0 0 34%;
+
+}
+
+.bangladesh-feature-text p{
+    line-height:1.9;
+    margin-bottom:34px;
+    color: #464646 !important;
+    font-weight: 900;
+    font-size: 16px;
+
+}
+
+.bangladesh-time{
+
+    color:#8b8b8b;
+    font-weight: 700;
+    font-size:15px;
+
+}
+
+.bangladesh-feature-image-box{
+
+    flex:1;
+
+}
+
+.bangladesh-feature-image{
+
+    width:100%;
+
+    aspect-ratio:16/11;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/*==========================================================
+                BOTTOM STORIES
+==========================================================*/
+
+.bangladesh-bottom-row{
+
+    margin-top:18px;
+
+}
+
+.bangladesh-small-card{
+
+    /*border-top:1px solid #dddddd;*/
+
+    padding-top:20px;
+
+}
+
+.bangladesh-small-image{
+
+    width:100%;
+
+    aspect-ratio:16/10;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin-bottom:16px;
+
+}
+
+.bangladesh-small-card h4{
+
+    color:#3d3d3d;
+
+    font-size:18px;
+
+    line-height:1.55;
+
+    font-weight:700;
+
+    transition:.2s;
+
+}
+
+.bangladesh-small-card:hover h4{
+
+    color:#1d5fd2;
+
+}
+
+/*==========================================================
+                RIGHT COLUMN
+==========================================================*/
+
+.bangladesh-top-row{
+
+    margin-bottom:24px;
+
+}
+
+.bangladesh-right-card{
+
+    height:100%;
+
+}
+
+.bangladesh-right-card-top{
+
+    /*border-bottom:1px solid #dddddd;*/
+
+    padding-bottom:22px;
+
+}
+
+.bangladesh-right-image{
+
+    width:100%;
+
+    aspect-ratio:16/10;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin-bottom:16px;
+
+}
+
+.bangladesh-right-title{
+
+    color:#3b3b3b;
+
+    font-size:20px;
+
+    line-height:1.5;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+    transition:.2s;
+
+}
+
+.bangladesh-right-desc{
+
+    color:#666666;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    margin:0;
+
+}
+
+.bangladesh-right-card:hover .bangladesh-right-title{
+
+    color:#1d5fd2;
+
+}
+
+/*============================
+        BOTTOM ROW
+============================*/
+
+.bangladesh-bottom-right-row{
+
+    margin-top:8px;
+
+}
+
+.bangladesh-bottom-right-row .bangladesh-right-title{
+
+    font-size:18px;
+
+    margin-bottom:0;
+
+}
+
+
+
+
+/* ===================================================
+   COUNTRY SECTION
+=================================================== */
+
+.country-section{
+
+    margin-top:40px;
+    margin-bottom:40px;
+
+}
+
+.country-heading{
+
+    border-top:2px solid #d1d5dc;
+    margin-bottom:24px;
+
+}
+
+.country-heading h2{
+
+    font-size:42px;
+    font-weight:700;
+    color:#2f2f2f;
+
+    margin:0;
+    padding-top:10px;
+    padding-bottom:26px;
+
+}
+
+.country-filter{
+
+    background:#f0f5f9;
+    border:1px solid #d9e2ea;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+}
+
+.country-filter-title{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    font-size:26px;
+    font-weight:700;
+
+    color:#444;
+
+}
+
+.country-filter-title i{
+
+    color:#c31833;
+
+    font-size:24px;
+
+}
+
+.country-select{
+
+    height:42px;
+
+    border-radius:2px;
+
+    font-size:17px;
+
+    border:1px solid #d5d5d5;
+
+}
+
+.country-search-btn{
+
+    width:100%;
+
+    height:42px;
+
+    border:none;
+
+    background:#bfc4ca;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.country-search-btn:hover{
+
+    background:#9da5ad;
+
+}
+
+.country-content{
+
+    margin-top:18px;
+
+}
+
+/*FEATURED News*/
+
+.country-feature{
+
+    border-bottom:1px solid #d9d9d9;
+
+    padding-bottom:28px;
+
+}
+
+.country-feature-title{
+    margin-top: 10px;
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 900;
+    font-size: 28px;
+    transition:.2s;
+
+}
+
+.country-feature:hover .country-feature-title:hover{
+
+    color:#0b51c5;
+
+}
+
+.country-feature-desc{
+
+    color: #464646 !important;
+    font-weight: 900;
+    font-size: 18px;
+
+}
+
+.country-time{
+
+    color:#888 !important;
+    font-weight: 900;
+    font-size: 16px;;
+
+}
+
+.country-feature-image{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/*-------------------- */
+
+.country-small-card{
+
+    margin-top:22px;
+
+}
+
+.country-card-image{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.country-card-title{
+    margin-top:14px;
+    line-height:1.45;
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 900;
+    font-size: 19px;
+
+}
+
+.country-small-card:hover .country-card-title{
+
+    color:#1d5fd2;
+
+}
+
+/*RIGHT GRID*/
+
+.country-right-column{
+
+    border-left:1px solid #d7d7d7;
+
+    padding-left:28px;
+
+}
+
+.country-grid-card{
+
+    height:100%;
+
+    padding-bottom:18px;
+
+}
+
+.country-grid-border-right{
+
+    border-right:1px solid #d7d7d7;
+
+    padding-right:18px;
+
+}
+
+.country-grid-border-bottom{
+
+    border-bottom:1px solid #d7d7d7;
+
+    padding-bottom:22px;
+
+}
+
+.country-grid-image{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.country-grid-title{
+
+    margin-top:14px;
+    line-height:1.45;
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+.country-grid-desc{
+
+    margin-top:10px;
+    color: #464646 !important;
+    font-weight: 900;
+    font-size: 16px;
+
+}
+
+.country-grid-card:hover .country-grid-title{
+
+    color:#1d5fd2;
+
+}
+
+
+/*==========================================================
+                    VIDEO GALLERY
+==========================================================*/
+
+.video-section{
+
+    margin:42px 0;
+
+}
+
+.video-wrapper{
+
+    background:#323232;
+
+    border-radius:22px;
+
+    padding:30px;
+
+}
+
+/*HEADER*/
+
+.video-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:26px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.video-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.video-title-bar{
+
+    width:4px;
+
+    height:32px;
+
+    background:#ffffff;
+
+    border-radius:4px;
+
+}
+
+.video-title h2{
+
+    margin:0;
+
+    color:#ffffff;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    line-height:1;
+
+}
+
+/*TABS*/
+
+.video-tabs{
+
+    display:flex;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.video-tab{
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#2b2b2b;
+
+    color:#ffffff;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-size:19px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.video-tab:hover{
+
+    background:#424242;
+
+}
+
+.video-tab.active{
+
+    background:#ffffff;
+
+    color:#111;
+
+    box-shadow:0 0 20px rgba(255,255,255,.18);
+
+}
+
+/*CONTENT*/
+
+.video-content{
+
+    align-items:flex-start;
+
+}
+
+/*==========================================================
+                FEATURED VIDEO
+==========================================================*/
+
+.video-feature-card{
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#1f1f1f;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.video-thumb-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.video-feature-image{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/*=====================
+      PLAY BUTTON
+=====================*/
+
+.video-play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 50px; /* Reduced height to match the YouTube button aspect ratio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /*border-radius: 12px;
+    background: #ff0000;
+    color: #fff;
+    transition: 0.25s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);*/
+}
+
+.video-play-btn i{
+
+    font-size:40px;
+
+    margin-left:4px;
+
+}
+
+.video-play-btn:hover{
+
+    transform:translate(-50%,-50%) scale(1.08);
+
+    /*background:#ff2948;
+
+    color:#fff;*/
+
+}
+
+/*=====================
+        BODY
+=====================*/
+
+.video-feature-body{
+
+    background:#1d1d1d;
+
+    padding:20px 22px 24px;
+
+}
+
+.video-meta{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#bfbfbf;
+
+    font-size:15px;
+
+    margin-bottom:16px;
+
+}
+
+.video-dot{
+
+    opacity:.8;
+
+}
+
+.video-feature-title{
+    line-height:1.45;
+    margin:0;
+    transition:.2s;
+    color: #ffffff !important;
+    text-shadow: 0.5px 0 0 #ffffff, -0.5px 0 0 #ffffff;
+    font-weight: 900;
+    font-size: 25px;
+
+}
+
+.video-feature-card:hover .video-feature-title{
+
+    color:#ffffff;
+
+}
+
+/*==========================================================
+                    PLAYLIST PANEL
+==========================================================*/
+
+.video-playlist{
+
+    background:#252525;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.video-list-item{
+
+    padding:18px;
+
+}
+
+.video-list-item:not(:last-child){
+
+    border-bottom:1px solid rgba(255,255,255,.14);
+
+}
+
+.video-list-item a{
+
+    display:flex;
+
+    gap:16px;
+
+    color:inherit;
+
+}
+
+.video-list-thumb{
+
+    position:relative;
+
+    flex:0 0 132px;
+
+}
+
+.video-list-thumb img{
+
+    width:132px;
+
+    height:74px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    display:block;
+
+}
+
+.video-small-play{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:30px;
+
+    height:30px;
+
+    background:#d8263d;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+}
+
+.video-small-play i{
+
+    font-size:17px;
+
+    margin-left:2px;
+
+}
+
+.video-list-content{
+
+    flex:1;
+
+}
+
+.video-list-title{
+
+    color:#fff;
+
+    font-size:16px;
+
+    line-height:1.45;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    transition:.2s;
+
+}
+
+.video-list-meta{
+
+    color:#bdbdbd;
+
+    font-size:13px;
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+}
+
+.video-list-item:hover .video-list-title{
+
+    color:#66a9ff;
+
+}
+
+/*==========================================================
+                VIDEO GALLERY POLISH
+==========================================================*/
+
+.video-feature-card{
+    width:100%;
+}
+
+.video-playlist{
+    width:100%;
+}
+
+/* Featured card */
+.video-feature-card{
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* Make thumbnail slightly taller */
+
+.video-feature-image{
+
+    aspect-ratio:16/8.8;
+
+}
+
+/* Title */
+
+.video-feature-title{
+
+    font-size:22px;
+
+    line-height:1.5;
+
+    letter-spacing:.2px;
+
+}
+
+/* Meta */
+
+.video-meta{
+
+    font-size:14px;
+
+}
+
+/* Playlist */
+
+.video-playlist{
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* Equal spacing */
+
+.video-list-item{
+
+    flex:1;
+
+}
+
+/* Playlist title */
+
+.video-list-title{
+
+    line-height:1.42;
+
+    font-size:15px;
+
+}
+
+/* Hover */
+
+.video-list-item:hover{
+
+    background:#2d2d2d;
+
+}
+
+/* Better transition */
+
+.video-list-item{
+
+    transition:.2s;
+
+}
+
+/* Images */
+
+.video-list-thumb img{
+
+    transition:.25s;
+
+}
+
+.video-list-item:hover img{
+
+    opacity:.92;
+
+}
+
+/* Play button */
+
+.video-small-play{
+
+    transition:.2s;
+
+}
+
+.video-list-item:hover .video-small-play{
+
+    transform:translate(-50%,-50%) scale(1.08);
+
+}
+
+/* Featured card hover */
+
+.video-feature-card{
+
+    transition:.25s;
+
+}
+
+.video-feature-card:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* Tabs */
+
+.video-tab{
+
+    min-width:74px;
+
+    text-align:center;
+
+}
+
+.video-content{
+    display:flex;
+    align-items:flex-start;
+    gap:28px;
+}
+
+.video-feature-column{
+
+    flex:0 0 60%;
+    max-width:60%;
+
+    padding:0 !important;
+}
+
+.video-list-column{
+
+    flex:0 0 calc(40% - 28px);
+    max-width:calc(40% - 28px);
+
+    padding:0 !important;
+}
+
+.video-feature-card,
+.video-playlist{
+
+    width:100%;
+
+}
+
+/*==========================================================
+                RESPONSIVE
+==========================================================*/
+
+@media (max-width: 1199.98px) {
+
+    .video-list-column {
+        display: none;
+    }
+
+    .video-feature-column {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:991.98px){
+
+    .video-feature-column{
+
+        padding-right:12px;
+
+        margin-bottom:24px;
+
+    }
+
+    .video-list-column{
+
+        padding-left:12px;
+
+    }
+
+}
+
+@media (max-width:767.98px){
+
+    .video-wrapper{
+
+        padding:20px;
+
+    }
+
+    .video-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .video-title h2{
+
+        font-size:34px;
+
+    }
+
+    .video-tabs{
+
+        width:100%;
+
+    }
+
+    .video-tab{
+
+        flex:1;
+
+        font-size:15px;
+
+    }
+
+    .video-list-item a{
+
+        gap:14px;
+
+    }
+
+    .video-list-thumb{
+
+        flex:0 0 110px;
+
+    }
+
+    .video-list-thumb img{
+
+        width:110px;
+
+        height:62px;
+
+    }
+
+    .video-feature-title{
+
+        font-size:20px;
+
+    }
+
+}
+
+@media (max-width:575.98px){
+
+    .video-list-item{
+
+        padding:14px;
+
+    }
+
+    .video-list-thumb{
+
+        flex:0 0 95px;
+
+    }
+
+    .video-list-thumb img{
+
+        width:95px;
+
+        height:54px;
+
+    }
+
+    .video-list-title{
+
+        font-size:14px;
+
+    }
+
+    .video-meta{
+
+        font-size:13px;
+
+    }
+
+}
+
+/*Photo Story Section Styles*/
 .aspect-video {
     aspect-ratio: 16 / 9;
 }
@@ -1222,3 +2494,4 @@ h3.fw-bold {
         max-width: 48% !important; 
     }
 }
+
