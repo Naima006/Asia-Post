@@ -212,18 +212,16 @@ main.main-content.py-4 {
     border-right: none;
 }
 
-/* Ensure the button is only shown via JS */
 #scrollToTopBtn {
-    display: none; /* Default hidden, JS will change this to 'flex' */
-    z-index: 1050; /* Ensure it stays above other content */
-    cursor: pointer;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    z-index: 9999 !important;
+    display: none; /* Hidden by default */
     align-items: center;
     justify-content: center;
-}
-
-/* Optional: Smooth transition for appearance */
-#scrollToTopBtn {
-    transition: opacity 0.3s ease;
+    /* Add smooth transitions if desired */
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* Ensure the SVG icon fits perfectly */
@@ -516,9 +514,9 @@ main.main-content.py-4 {
 
 }*/
 
-.col-md-6 {
+/*.col-md-6 {
   border-right: 1px solid rgb(192, 192, 193);
-}
+}*/
 
 /* Hover effect for headline color change */
 .col-6:hover h6 {
@@ -591,6 +589,9 @@ img.img-fluid {
     font-weight: 900;
     font-size: 28px;
 
+}
+.text-secondary-custom:hover{
+   color: #0d6efd !important;
 }
 
 .text-secondary-custom1{
@@ -1088,6 +1089,43 @@ h3.fw-bold {
     font-size: 1.5rem;
 }
 
+/* ===============================
+   Photo Story Section Styles
+=============================== */
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
+/* Base wrapper to hide overflow for the slide-up animation */
+.photo-card-wrapper {
+    background-color: #f8f9fa; /* Prevents white flashes */
+}
+
+/* The dark overlay that slides up on hover */
+.photo-hover-content {
+    background-color: #374151; /* Asia Post secondary dark color */
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+}
+
+/* Trigger animation on hover */
+.photo-card-wrapper:hover .photo-hover-content {
+    transform: translateY(0);
+}
+
+/* Top-right semi-transparent badge for photo count */
+.photo-badge {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    z-index: 3; /* Keep it above the overlay */
+    min-width: 35px;
+    padding-bottom: 2px !important;
+}
+
+.photo-badge i {
+    line-height: 1.1;
+    margin-bottom: 2px;
+}
 
 /* For screens wider than 465px, keep your current design */
 @media (min-width: 466px) {
@@ -1118,6 +1156,12 @@ h3.fw-bold {
   .slider-btn.next-btn {
     right: 0 !important;
   }
+}
+
+@media (max-width: 768px) {
+    .position-absolute.bottom-0 {
+        bottom: 2px !important;
+    }
 }
 
 @media (max-width: 991.98px) {
