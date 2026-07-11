@@ -495,6 +495,10 @@ main.main-content.py-4 {
 .border-right-only {
     border-right: 1px solid rgb(222, 226, 224);
 }
+/* Optional: Vertical line for the last row item without a bottom border */
+.border-left-only {
+    border-left: 1px solid rgb(222, 226, 224);
+}
 
 /* Matching the hover color change used on the site */
 .group:hover a, 
