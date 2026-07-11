@@ -1,0 +1,1176 @@
+/* 1. Global Font Setup */
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+@font-face {
+    font-family: 'Kalpurush';
+    src: url('fonts/Kalpurush.woff2') format('woff2'), url('fonts/Kalpurush.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Force Global Font and Reset */
+* {
+    font-family: 'Kalpurush', sans-serif !important;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #ffffff;
+    color: #000;
+    margin: 0;
+}
+
+
+.flex-grow-1 {
+  flex-grow: 1;
+} 
+
+/* Reusable Bold Element */
+.custom-bold-text {
+    font-weight: 900 !important;
+    text-shadow: 0.25px 0 0 #484848, -0.25px 0 0 #484848;
+}
+
+/* Reusable Hover Effect (if you want the same effect elsewhere) */
+.custom-bold-text:hover {
+    text-shadow: 0.25px 0 0 #0000ff, -0.25px 0 0 #0000ff;
+}
+
+/* Header Spacing */
+.site-header {
+    border-bottom: 1px solid #eee;
+}
+header.site-header {
+  position: static;
+  top: 0;
+  z-index: 1060; /* Higher z-index to stay on top */
+  background: white; /* Ensure it's opaque so content doesn't bleed through */
+}
+
+.bold-headline {
+    text-shadow: 0.35px 0 0 #484848, -0.35px 0 0 #484848;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to go to next line instead of overflowing */
+    justify-content: center;
+    width: 100%;
+}
+/* Navbar
+ Links: Compact, Bold, News-Portal style */
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-weight: 900 !important;
+    font-size: 1.25rem;
+    line-height: 1.75rem; /* Adjusted to look like a news portal, not too huge */
+    padding: 10px 12px !important;
+    transition: color 0.2s;
+    text-shadow: 0.35px 0 0 #484848, -0.35px 0 0 #484848;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important; /* Standard news blue */
+    text-shadow: 0.25px 0 0 #0000ff, -0.25px 0 0 #0000ff;
+}
+
+nav.desktop-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1050; /* Ensure it stays above other content */
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Ensures it stays above main content */
+    background-color: transparent !important;
+}
+
+/* This ensures the mobile menu appears properly below the nav bar when toggled */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+}
+
+main.main-content.py-4 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+  /* Custom utility to remove button boxes */
+.btn-clean {
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Fix mobile toggle */
+.navbar-collapse {
+    justify-content: center;
+}
+
+
+
+/* 4. Card Hover Effect */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-layer {
+    margin-top: -3rem;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.rounded-1 {
+  width: 200px;
+  height: auto;
+  min-width: 200px;
+  object-fit: cover;
+  aspect-ratio: 4/2;
+}
+
+.d-lg-block {
+  margin-bottom:0;
+}
+
+.g-4 {
+  margin-top: 0px;
+}
+.card-layer:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* The container for the cards */
+.card-container-bg {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    padding-top: 0.5rem; /* Reduced top space */
+    margin-top: 0;
+}
+
+/* Ensure columns keep their gutter spacing */
+.card-container-bg > .col {
+    margin-top: var(--bs-gutter-y);
+}
+
+/* Optional: Disable the hover animation on the cards as we did earlier */
+.card-container-bg .card {
+    transition: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.card-container-bg .card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Footer Link Styles */
+.footer-link {
+    color: #6c757d; /* text-gray-600 */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #007bff; /* Replace with your selectedColor code */
+}
+
+/* Add vertical space to the container */
+.footer-link-container { /* Add this class to your div or use existing classes */
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the individual links and separators */
+.footer-link {
+    padding: 0 20px;
+    border-right: 1px solid #acafaf; /* Light gray border */
+    text-decoration: none;
+    line-height: 1.5; /* Helps center the border vertically */
+}
+
+/* Remove the border from the very last link */
+.footer-link:last-child {
+    border-right: none;
+}
+
+/* Ensure the button is only shown via JS */
+#scrollToTopBtn {
+    display: none; /* Default hidden, JS will change this to 'flex' */
+    z-index: 1050; /* Ensure it stays above other content */
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optional: Smooth transition for appearance */
+#scrollToTopBtn {
+    transition: opacity 0.3s ease;
+}
+
+/* Ensure the SVG icon fits perfectly */
+#scrollToTopBtn svg {
+    font-size: 1.5rem;
+}
+
+/* Override for better hover effect */
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+}
+/* Ensure the button stays positioned correctly */
+.position-relative {
+    position: relative;
+}
+
+/* Responsive adjustment for the footer button */
+@media (max-width: 768px) {
+    .position-absolute.bottom-0 {
+        bottom: 10px !important;
+    }
+}
+@media (min-width: 992px){
+
+    .mobile-header{
+        position: static;
+    }
+
+    .desktop-navbar{
+        position: sticky;
+        top: 0;
+        z-index: 1030;
+        background:#fff;
+    }
+
+}
+
+.header-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 0;
+}
+
+.header-left,
+.header-right{
+    flex:1;
+    display:flex;
+    align-items:center;
+}
+
+.header-left{
+    justify-content:flex-start;
+}
+
+.header-right{
+    justify-content:flex-end;
+    gap:22px;
+}
+
+.header-logo{
+    flex:0 0 auto;
+    text-align:center;
+}
+
+.header-logo img{
+    display:block;
+    width:100%;
+    max-width:190px;
+    height:auto;
+}
+
+.desktop-menu{
+    display:flex;
+}
+
+.mobile-menu{
+    display:none;
+}
+
+@media(max-width:991.98px){
+
+    .desktop-menu{
+        display:none;
+    }
+
+    .mobile-menu{
+        display:flex;
+    }
+
+}
+/* ===========================
+   Mobile
+=========================== */
+
+.mobile-header,
+.desktop-navbar{
+    transition:.2s;
+}
+
+@media (max-width:991.98px){
+
+    .mobile-header{
+        position: sticky;
+        top:0;
+        z-index:1045;
+        background:#fff;
+    }
+
+    .desktop-navbar{
+        position: sticky;
+        top:72px;      /* adjust after measuring your header */
+        z-index:1040;
+        background:#fff;
+    }
+
+}
+
+@media (max-width:991.98px){
+
+    .header-wrapper{
+        display:grid;
+        grid-template-columns:
+            50px
+            1fr
+            auto;
+        align-items:center;
+        gap:8px;
+        padding:10px 0;
+    }
+
+    .header-left{
+        justify-content:flex-start;
+    }
+
+    .header-logo{
+        display:flex;
+        justify-content:center;
+    }
+
+    .header-logo img{
+
+        width:100%;
+        max-width:140px;
+        height:auto;
+    }
+
+    .header-right{
+        gap:12px;
+        justify-content:flex-end;
+    }
+
+}
+.mobile-text{
+    display:none;
+}
+
+@media(max-width:991px){
+
+    .desktop-text{
+        display:none;
+    }
+
+    .mobile-text{
+        display:inline;
+    }
+
+}
+/* Apply padding on larger screens */
+@media (min-width: 992px) {
+    .banner-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container.banner-container {
+    max-width: 1140px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Banner Container Spacing */
+.banner-container {
+    max-width: 1280px !important;
+    margin-top: 1rem;    /* 16px top margin */
+    margin-bottom: rem; /* 24px bottom margin */
+    
+    /* Responsive Padding: 0 on mobile, 1rem on desktop */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Apply padding on larger screens */
+@media (min-width: 992px) {
+    .banner-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Aspect Ratio and Scaling */
+.banner-image {
+    display: block;
+    width: 100%;
+    /* Ensures the image maintains its aspect ratio as it scales */
+    height: auto; 
+    object-fit: cover;
+    /* Optional: If you want to force an exact 10:1 ratio */
+    aspect-ratio: 10 / 1; 
+}
+
+/* Sidebar Sticky Behavior */
+@media (min-width: 992px) {
+    .sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 80px; /* Adjust based on your header height */
+    }
+}
+
+/* Border Dividers */
+.border-right {
+    border-right: 1px solid #dee2e6;
+}
+
+/* Sidebar and Typography */
+.text-secondary { color: #464646; text-shadow: 0.25px 0 0 #484848, -0.25px 0 0 #484848;}
+.fw-bold {
+    font-weight: 700 !important;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+/* Aspect ratio for featured cards */
+.position-relative img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* Matching the "Live Dot" look */
+.text-liveDotColor {
+    color: #d32f2f; /* Standard red for categories */
+}
+
+/* Hover effects to match reference */
+.group:hover .text-secondary {
+    color: #0d6efd !important;
+}
+
+.overlay-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+/* Ensure consistent card borders and hover effect */
+.border-bottom { 
+    border-bottom: 1px solid #dee2e6 !important; 
+}
+
+.border-bottom-right { 
+    border-bottom: 1px solid #dee2e6 !important;
+    border-right: 1px solid rgb(222, 226, 224);
+}
+
+/* Optional: Vertical line for the last row item without a bottom border */
+.border-right-only {
+    border-right: 1px solid rgb(222, 226, 224);
+}
+
+/* Matching the hover color change used on the site */
+.group:hover a, 
+.group:hover .text-dark {
+    color: #0d6efd !important; /* Matches the site's link hover blue */
+}
+
+/* Gradient overlay for featured lead image */
+.bg-gradient-dark {
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent) !important;
+}
+
+/*.col-md-3{
+    border-right: 1px solid rgb(192, 192, 193);
+
+}*/
+
+.col-md-6 {
+  border-right: 1px solid rgb(192, 192, 193);
+}
+
+/* Hover effect for headline color change */
+.col-6:hover h6 {
+    color: #0d6efd !important;
+}
+
+/* Aspect ratio for uniform grid look */
+.col-6 img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    width: 100%;
+}
+
+.col-lg-7 {
+  padding-right: 24px;
+}
+
+/* Ensure consistent spacing */
+.card-img-top {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+/* Ensure consistent spacing */
+.card-layer-img-top {
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+/* স্টিকি পজিশন নিশ্চিত করা */
+.sticky-top {
+    position: sticky;
+    top: 80px; 
+    z-index: 100;
+}
+
+/* নিউজ টাইটেল হোভার ইফেক্ট */
+.group:hover a {
+    color: #0d6efd !important;
+}
+
+/* ইমেজ ফিটিং */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+img.img-fluid {
+    object-fit: contain !important;
+}
+
+/* মোবাইলে বর্ডার রিমুভ */
+@media (max-width: 991px) {
+    .border-end { border-right: none !important; }
+}
+
+/* Most Read Section Styles */
+.border-secondary-custom {
+    border-color: #d1d5dc !important;
+}
+
+.text-secondary-custom0 {
+    color: #464646 !important;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+
+.text-secondary-custom {
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 900;
+    font-size: 28px;
+
+}
+
+.text-secondary-custom1{
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.text-secondary-custom2{
+    color: #464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
+    font-weight: 900;
+    font-size: 19px;
+
+}
+
+.text-secondary-custom3{
+    color: #464646 !important;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+
+.text-muted-custom {
+    color: #cccccc !important;
+}
+
+/* Hover effect to match the site's primary blue */
+.group:hover .text-secondary-custom {
+    color: #0d6efd !important;
+}
+/* Hover effect to match the site's primary blue */
+.group:hover .text-secondary-custom1 {
+    color: #0d6efd !important;
+}
+
+.group:hover .text-secondary-custom2 {
+    color: #0d6efd !important;
+}
+
+/* Ensure consistent alignment */
+.display-6 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.list-group-item.group {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid rgb(222, 226, 224);
+  
+}
+
+/*.col-lg-3 {
+  border-left: 1px solid rgb(222, 226, 224);
+}*/
+.col-lg-3 a.text-dark:hover {
+    color: #0d6efd !important; /* Bootstrap primary blue */
+}
+/* Card Container */
+.ap-card {
+    transition: transform 0.3s ease;
+}
+
+.ap-card:hover .card-body {
+    background-color: #c31833 !important;
+}
+
+.ap-card:hover .text-dark-custom,
+.ap-card:hover .text-muted,
+.ap-card:hover p {
+    color: #ffffff !important;
+}
+
+/* Image Wrapper and Effect */
+.img-wrapper {
+    overflow: hidden;
+    aspect-ratio: 16/10;
+}
+
+.ap-card img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ap-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Typography Overrides */
+.text-dark-custom {
+    color: #374151;
+}
+
+#ap-slider {
+    display: flex;
+    scroll-behavior: smooth;
+    padding-bottom: 20px; /* Space for scrollbar if visible */
+}
+
+/* Make sure items don't wrap and have a fixed width */
+.col-md-3 {
+    flex: 0 0 25%; /* 4 items visible at once */
+    max-width: 25%;
+}
+
+@media (max-width: 992px) {
+    .col-md-3 { flex: 0 0 50%; max-width: 50%; }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 { flex: 0 0 90%; max-width: 90%; }
+}
+
+/* Ensure the container is the reference point */
+.container {
+  position: relative;
+}
+
+.slider-container-wrapper {
+    position: relative;
+}
+
+/* Adjust the buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.bg-light {
+    background-color: #f0f5f9 !important;
+}
+
+.text-danger {
+    color: #c31833 !important; /* The specific red dot color from your code */
+}
+
+/* Sidebar Container */
+.poll-sidebar-wrapper {
+    background-color: #f0f5f9;
+    padding: 1rem;
+    height: 100%;
+}
+
+/* Poll Card Styling */
+.poll-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Poll Question Text */
+.poll-content p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+/* Poll Option Buttons */
+.btn-outline-secondary {
+    border: 1px solid #eadbd3;
+    background-color: #ffffff;
+    color: #241d1a;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #fdf5f3;
+    border-color: #d8a190;
+    color: #8f1d17;
+}
+
+/* Poll Progress Bars (For the results view) */
+.poll-result-bar {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eadbd3;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.poll-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(195, 24, 51, 0.1); /* Match red tone */
+    z-index: 0;
+}
+
+.poll-label {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+/* Share Buttons */
+.share-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    transition: 0.2s;
+}
+
+.share-btn:hover {
+    background: #e2e8f0;
+    color: #000;
+}
+
+/* Slider Dots */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    padding: 0;
+    cursor: pointer;
+}
+.dot.active { background: #000; }
+
+/* Styling for the clean bordered input boxes */
+.border { border: 1px solid #eadbd3 !important; }
+.hover-border-red:hover { border-color: #c31833 !important; color: #c31833; }
+.cursor-pointer { cursor: pointer; }
+
+/* Styling for Poll Sidebar */
+.poll-container { border-radius: 10px !important; }
+.text-danger { color: #8f1d17 !important; }
+
+/* Align social icons */
+.bi { font-size: 1.1rem; }
+.bi-facebook, .bi-whatsapp, .bi-link, .bi-download { color: #6f6259; }
+.bi-facebook:hover, .bi-whatsapp:hover { color: #c31833; }
+
+@media (min-width: 992px) {
+    .mobile-header {
+        position: static;
+    }
+
+    .desktop-navbar {
+        position: sticky;
+        top: 0; /* Ensure this is 0 so it sticks to the very top */
+        z-index: 1030;
+        background: #fff;
+    }
+}
+
+/* Quote Card Lift Effect */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Quote Icon Styling */
+.display-5 {
+    font-size: 3rem;
+    font-family: serif;
+    color: #cbd5e0;
+}
+
+/* Author Section */
+.rounded-circle {
+    object-fit: cover;
+}
+
+/* Ensure consistent card height */
+#kotha-slider .card {
+    min-height: 360px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    #kotha-slider .card { min-height: auto; }
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Icon Buttons */
+.btn-outline-light {
+    border: 1px solid #e2e8f0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline-light:hover {
+    background-color: #e2e8f0;
+    color: #000;
+}
+
+/* Quote Icon */
+.display-6 {
+    font-size: 3rem;
+    font-family: serif;
+    color: #a0aec0;
+}
+
+/* Author Image */
+.rounded-circle {
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+}
+
+/* Reduce the actual card size */
+.kotha-card-wrapper {
+    max-width: 320px; /* Adjust this value to make it as slim as you want */
+    margin: 0 auto;
+}
+
+/* Ensure the hover lift still works */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Container for the horizontal slide */
+#kotha-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+/* Force card width so they don't squash */
+#kotha-slider > div {
+    flex: 0 0 300px; /* Adjust this width as needed */
+    max-width: 300px;
+}
+
+/* Button Positioning */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.prev-btn { left: -10px; }
+.next-btn { right: -10px; }
+
+/* Responsive Border for the left column */
+@media (min-width: 992px) {
+    .border-end-lg {
+        border-right: 1px solid #e9ecef;
+    }
+}
+
+.news-card-group:hover .card-title {
+    color: #0d6efd !important; /* Bootstrap primary blue */
+    transition: color 0.3s ease; /* Optional: makes the color change smooth */
+}
+
+
+.group-link:hover h6, 
+.group-link:hover h2 {
+    color: #0d6efd !important;
+}
+
+.custom-sidebar-section .custom-sidebar-img {
+    width: 150px !important;
+    height: 90px !important;
+    min-width: 150px !important; /* Prevents shrinking in flex layout */
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Ensure the text container takes up the remaining space */
+.custom-sidebar-section .group-link {
+    align-items: flex-start !important;
+}
+
+/* Optional: Slightly increase font for these specific headlines */
+.custom-sidebar-section .group-link h6, 
+.custom-sidebar-section .group-link div {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* Custom Image Scaling (replaces Tailwind's aspect-video object-cover) */
+.custom-img-cover {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* Vertical Dividers for Desktop Columns */
+@media (min-width: 992px) {
+    .border-end-custom {
+        border-right: 1px solid #dee2e6 !important;
+    }
+}
+
+/* Title colors and link hover effect */
+.text-secondary-custom { color: #374151 !important; }
+.group-link:hover h2, 
+.group-link:hover h3, 
+.group-link:hover h5, 
+.group-link:hover h6 {
+    color: #0d6efd !important;
+}
+
+/* Truncate text block after 2 lines (matches lg:line-clamp-2) */
+.d-lg-block.small {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Recommended approach */
+.btn.px-4.py-2{
+  padding: 0.5rem 0.5rem !important;
+}
+
+/* Container background for the card body */
+.bg-light-pink { background-color: #fff0f4 !important; }
+
+/* Aspect ratio for the square images */
+.aspect-square { aspect-ratio: 1 / 1; object-fit: cover; }
+
+/* Hover animation to match reference */
+.group img { transition: transform 0.3s ease; }
+.group:hover img { transform: scale(1.05); }
+
+/* Remove scrollbar while keeping functionality */
+.overflow-x-auto::-webkit-scrollbar { display: none; }
+
+/* Ensure the list items sit directly below the lead article */
+.list-unstyled {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Make sure the borders look exactly like the reference */
+.border-top {
+    border-top: 1px solid #dee2e6 !important;
+}
+
+/* Category header border thickness */
+h3.fw-bold {
+    border-top: 1px solid #dee2e6 !important;
+    font-size: 1.5rem;
+}
+
+
+/* For screens wider than 465px, keep your current design */
+@media (min-width: 466px) {
+    .news-image-float {
+        width: 70% !important; /* Keep the large size */
+        float: right;
+    }
+}
+
+/* For screens 465px or less, make the image full-width and remove float */
+@media (max-width: 465px) {
+    .news-image-float {
+        width: 100% !important; /* Make it fill the screen width */
+        float: none !important; /* Remove the float so it stacks properly */
+        display: block;        /* Ensure it behaves like a block element */
+        margin-left: 0 !important; /* Reset margins */
+    }
+}
+
+@media (max-width: 575px) {
+  .slider-container-wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .slider-btn.prev-btn {
+    left: 0 !important;
+  }
+  .slider-btn.next-btn {
+    right: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* Targets both the main content and sidebar */
+  .col-lg-9.bg-light.p-4,
+  .col-lg-3.mt-4.mt-lg-0 {
+    background-color: #f0f5f9 !important;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+    width: calc(100% + 24px) !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  
+  /* Additional cleanup for the sidebar spacing */
+  .col-lg-3.mt-4.mt-lg-0 {
+    margin-top: 0 !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Ensure the inner sidebar wrapper doesn't clash */
+  .poll-sidebar-wrapper.position-relative {
+    background-color: transparent !important;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Only affect columns inside this specific section */
+    .entertainment-grid > .col-md-6 { 
+        flex: 0 0 50%; 
+        max-width: 50%; 
+    }
+    .entertainment-grid > .col-md-3 { 
+        flex: 0 0 10%; 
+        max-width: 10%; 
+    }
+}
+
+
+/* Fix for Entertainment section overlap between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .entertainment-grid {
+        display: flex;
+        flex-wrap: wrap; /* Allows columns to wrap to the next line instead of overlapping */
+    }
+
+    .entertainment-grid > .col-md-6 { 
+        flex: 0 0 100% !important; /* Take full width on tablets */
+        max-width: 100% !important; 
+        margin-bottom: 20px;
+    }
+
+    .entertainment-grid > .col-md-3 { 
+        flex: 0 0 48% !important; /* Stack two columns side-by-side */
+        max-width: 48% !important; 
+    }
+}
