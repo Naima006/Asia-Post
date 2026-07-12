@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Post: Dhaka Based Bangla News Portal</title>
+    <meta name="description" content="Asia Post is a fast-growing news and multimedia portal delivering the latest news, sports, entertainment, opinion, and video content in both Bengali and English.">
+
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+<div style="position: sticky; top: 0; z-index: 1060;">
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="header-wrapper">
+
+                <!-- LEFT -->
+                <div class="header-left">
+
+                    <button
+                        class="btn-clean menu-btn"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navMenu"
+                        aria-label="Menu">
+
+                        <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <!-- CENTER -->
+
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Asia Post Logo">
+                    </a>
+                </div>
+
+                <!-- RIGHT -->
+
+                <!-- Action Buttons (Right Aligned) -->
+                <div class="header-right">
+                    <!-- Search Icon -->
+                    <button class="btn-clean" aria-label="Search">
+                        <svg height="20" width="20" viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Language Link -->
+                    <a href="/english" class="text-decoration-none text-dark fw-semibold fs-5">
+                        <span class="desktop-text text-secondary-custom">English</span>
+                        <span class="mobile-text text-secondary-custom">EN</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="desktop-navbar navbar navbar-expand-lg border-top border-bottom bg-white">
+
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a href="todays-news.html"
+                        class="nav-link active-page">
+                            সর্বশেষ
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="shorts">সংক্ষেপ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kotha">কথা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bangladesh">বাংলাদেশ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="politics">রাজনীতি</a></li>
+                    <li class="nav-item"><a class="nav-link" href="country-news">সারাদেশ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="world">বিশ্ব</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ap-special">স্পেশাল</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sports">খেলা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="entertainment">বিনোদন</a></li>
+                    <li class="nav-item"><a class="nav-link" href="business-news">বাণিজ্য</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education">শিক্ষা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lifestyle">জীবন</a></li>
+                    <li class="nav-item"><a class="nav-link" href="opinion">মতামত</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video">ভিডিও</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+</div>
+
+    <!-- Main Content -->
+    <main class="main-content py-4">
+        <!-- ==========================================
+                        TODAYS NEWS
+        =========================================== -->
+
+        <section class="todays-news-section">
+
+            <div class="container">
+
+                <div class="todays-news-wrapper">
+
+                    <h1 class="todays-news-heading heading-border">
+
+                        সর্বশেষ
+
+                    </h1>
+
+                    <!-- News List -->
+
+                    <div class="todays-news-list">
+
+                        <!-- ==========================================
+                                    NEWS ITEM 1
+                        =========================================== -->
+
+                        <article class="todays-news-item" border-bottom>
+
+                            <div class="row g-0 align-items-start">
+
+                                <!-- LEFT -->
+
+                                <div class="col-md-8">
+
+                                    <div class="todays-news-content">
+
+                                        <a href="#" class="text-decoration-none">
+
+                                            <h2 class="todays-news-title">
+
+                                                সাড়ে পাঁচ ঘণ্টা পর ঢাকা-খুলনা মহাসড়কে যান চলাচল শুরু
+
+                                            </h2>
+
+                                        </a>
+
+                                        <p class="todays-news-summary">
+                                            ফরিদপুরের ভাঙ্গায় বাসের চাপায় ৫ জন নিহতের ঘটনায় ক্ষিপ্ত এলাকাবাসীর অবরোধ 
+                                            ও গাড়িতে আগুন ধরিয়ে দেওয়ায় বন্ধ থাকা ঢাকা-খুলনা মহাসড়কে যান চলাচল 
+                                            শুরু হয়েছে। শনিবার (১১ জুলাই) রাত ১২টার দিকে প্রায় সাড়ে পাঁচ ঘণ্টা পর যান 
+                                            চলাচল স্বাভাবিক হয়। এর আগে সন্ধ্যা সাড়ে ৬টা থেকে এই মহাসড়কটি বন্ধ ছিল।
+                                        </p>
+
+                                        <div class="todays-news-meta">
+
+                                            <span>১২ জুলাই ২০২৬, ০৫:১৮ পিএম</span>
+
+                                            <span class="news-dot">|</span>
+
+                                            <span>সারা দেশ</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="col-md-4">
+
+                                    <a href="#">
+
+                                        <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost50054c52-e025-4c21-a5f2-86b96c10bce3.jpg"
+                                            class="img-fluid todays-news-image"
+                                            alt="">
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="pb-4 border-bottom"></div>
+
+                        </article>
+
+                        <article class="todays-news-item">
+
+                            <div class="row g-0 align-items-start">
+
+                                <!-- LEFT -->
+
+                                <div class="col-md-8">
+
+                                    <div class="todays-news-content">
+
+                                        <a href="#" class="text-decoration-none">
+
+                                            <h2 class="todays-news-title">
+
+                                                বিএনপির স্থায়ী কমিটির বৈঠক, যেসব বিষয়ে আলোচনা হলো
+
+                                            </h2>
+
+                                        </a>
+
+                                        <p class="todays-news-summary">
+                                            বাংলাদেশ জাতীয়তাবাদী দলের (বিএনপি) স্থায়ী কমিটির বৈঠক অনুষ্ঠিত হয়েছে। শনিবার রাত ৮টার দিকে রাজধানীর গুলশানে বিএনপি চেয়ারপারসনের কার্যালয়ে এ বৈঠক শুরু হয়ে শেষ হয় রাত ১০টায়।
+                                            বৈঠকে সভাপতিত্ব করছেন বিএনপি চেয়ারম্যান ও বাংলাদেশ সরকারের প্রধানমন্ত্রী তারেক রহমান। বিএনপির মিডিয়া সেলের সদস্য শায
+                                        </p>
+
+                                        <div class="todays-news-meta">
+
+                                            <span>১২ জুলাই ২০২৬, ০৫:১৮ পিএম</span>
+
+                                            <span class="news-dot">|</span>
+
+                                            <span>বাংলাদেশ</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="col-md-4">
+
+                                    <a href="#">
+
+                                        <img src="https://images.asia-post.com/original_images/NewsLabAsiaPostf1f67c6a-f672-4656-9812-b660153c8fdd.jpg"
+                                            class="img-fluid todays-news-image"
+                                            alt="">
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="pb-4 border-bottom"></div>
+
+                        </article>
+
+                        <article class="todays-news-item">
+                            <div class="row g-0 align-items-start">
+
+                                <!-- LEFT -->
+
+                                <div class="col-md-8">
+
+                                    <div class="todays-news-content">
+
+                                        <a href="#" class="text-decoration-none">
+
+                                            <h2 class="todays-news-title">
+
+                                                করপোরেট চাকরি ছেড়ে প্রথম বিসিএসেই পুলিশ ক্যাডার বুটেক্সের রাহুল
+
+                                            </h2>
+
+                                        </a>
+
+                                        <p class="todays-news-summary">
+                                            বাংলাদেশ টেক্সটাইল বিশ্ববিদ্যালয় (বুটেক্স) থেকে টেক্সটাইল প্রকৌশলে স্নাতক শেষ করে কর্পোরেট জীবনে পা রেখেছিলেন রাহুল ভৌমিক। 
+                                            ডেনিম মার্চেন্ডাইজিং এবং দেশের একটি শীর্ষস্থানীয় টেক্সটাইল গ্রুপে কাজ করলেও তার লক্ষ্য ছিল বিসিএস।
+                                        </p>
+
+                                        <div class="todays-news-meta">
+
+                                            <span>১২ জুলাই ২০২৬, ০৫:১৮ পিএম</span>
+
+                                            <span class="news-dot">|</span>
+
+                                            <span>ক্যাম্পাস</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="col-md-4">
+
+                                    <a href="#">
+
+                                        <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost58a75a4b-344b-445e-9e04-aa585c35a45d.jpg"
+                                            class="img-fluid todays-news-image"
+                                            alt="">
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="pb-4 border-bottom"></div>
+
+                        </article>
+                            
+                        <article class="todays-news-item">
+                            <div class="row g-0 align-items-start">
+                                <!-- LEFT -->
+                                <div class="col-md-8">
+
+                                    <div class="todays-news-content">
+
+                                        <a href="#" class="text-decoration-none">
+
+                                            <h2 class="todays-news-title">
+
+                                                মাঝ নদী থেকে ফেরি ফিরিয়ে আনলেন হান্নান মাসউদ
+                                            </h2>
+
+                                        </a>
+
+                                        <p class="todays-news-summary">
+                                            নোয়াখালীর হাতিয়ার চেয়ারম্যান ঘাট থেকে যাত্রী ও মালবাহী গাড়ি নিয়ে নলচিরা ঘাটের উদ্দেশ্যে ছেড়ে 
+                                            যাওয়া ফেরিটি ২৩ মিনিট পর পুনরায় চেয়ারম্যান ঘাটে ফিরে আসে। বিষয়টি নিয়ে ফেরী যাত্রীদের মধ্যে 
+                                            উত্তেজনা দেখা দিলে তাদের জানানো হয় স্থানীয় সংসদ সদস্য আবদুল হান্নান মাসউদ ঘাটে এসেছেন তাকে নিয়ে নলচিরা
+                                        </p>
+
+                                        <div class="todays-news-meta">
+
+                                            <span>১২ জুলাই ২০২৬, ০৫:১৮ পিএম</span>
+
+                                            <span class="news-dot">|</span>
+
+                                            <span>সারা দেশ</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="col-md-4">
+
+                                    <a href="#">
+
+                                        <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost15881897-0958-433f-ace1-d1a9ae81bed5.jpg"
+                                            class="img-fluid todays-news-image"
+                                            alt="">
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="pb-4 border-bottom"></div>
+
+                        </article>
+                        
+                        <article class="todays-news-item">
+                            <div class="row g-0 align-items-start">
+
+                                <!-- LEFT -->
+
+                                <div class="col-md-8">
+
+                                    <div class="todays-news-content">
+
+                                        <a href="#" class="text-decoration-none">
+
+                                            <h2 class="todays-news-title">
+
+                                                লুডু খেলাকে কেন্দ্র করে হাতুড়ির আঘাতে যুবক নিহত
+
+                                            </h2>
+
+                                        </a>
+
+                                        <p class="todays-news-summary">
+                                            বরিশালের মেহেন্দিগঞ্জ উপজেলায় লুডু খেলাকে কেন্দ্র করে হাতুড়ির আঘাতে আল-আমিন শাকিল (২৫) নামে এক যুবক নিহত হয়েছেন। 
+                                            এ ঘটনায় অভিযুক্ত সাইফুল ইসলামকে আটক করেছে পুলিশ। শনিবার (১১ জুলাই) বিকেল ৫টার দিকে উপজেলার চরগোপালপুর ইউনিয়নের জালিরচর গ্রামে এ ঘটনা ঘটে। 
+                                        </p>
+
+                                        <div class="todays-news-meta">
+
+                                            <span>১২ জুলাই ২০২৬, ০৫:১৮ পিএম</span>
+
+                                            <span class="news-dot">|</span>
+
+                                            <span>সারা দেশ</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="col-md-4">
+
+                                    <a href="#">
+
+                                        <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost6b5bee7f-9c95-4a9c-98aa-e1fab7530cd7.jpg"
+                                            class="img-fluid todays-news-image"
+                                            alt="">
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="pb-4 border-bottom"></div>
+                        </article>
+                        
+                        <article class="todays-news-item">
+                            <div class="row g-0 align-items-start">
+
+                                <!-- LEFT -->
+
+                                <div class="col-md-8">
+
+                                    <div class="todays-news-content">
+
+                                        <a href="#" class="text-decoration-none">
+
+                                            <h2 class="todays-news-title">
+
+                                                না ফেরার দেশে আর্জেন্টিনার ফুটবল কিংবদন্তি
+
+                                            </h2>
+
+                                        </a>
+
+                                        <p class="todays-news-summary">
+                                            আর্জেন্টিনা ও বোকা জুনিয়র্সের কিংবদন্তি ফুটবলার আন্তোনিও উবালদো রাত্তিন আর নেই। 
+                                            শনিবার ৮৯ বছর বয়সে মারা গেছেন ষাটের দশকের এই তারকা মিডফিল্ডার। তার মৃত্যুর খবর নিশ্চিত করেছে বোকা জুনিয়র্স।
+                                        </p>
+
+                                        <div class="todays-news-meta">
+
+                                            <span>১২ জুলাই ২০২৬, ০৫:১৮ পিএম</span>
+
+                                            <span class="news-dot">|</span>
+
+                                            <span>খেলা</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="col-md-4">
+
+                                    <a href="#">
+
+                                        <img src="https://images.asia-post.com/original_images/NewsLabAsiaPostf4b4c6fc-d094-42cd-a9f2-e5c3c8e5dd19.jpg"
+                                            class="img-fluid todays-news-image"
+                                            alt="">
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="pb-4 border-bottom"></div>
+
+                        </article>
+                        <article class="todays-news-item">
+                            <div class="row g-0 align-items-start">
+
+                                <!-- LEFT -->
+
+                                <div class="col-md-8">
+
+                                    <div class="todays-news-content">
+
+                                        <a href="#" class="text-decoration-none">
+
+                                            <h2 class="todays-news-title">
+
+                                                সোসাইটি অব স্পিচ অ্যান্ড ল্যাঙ্গুয়েজ থেরাপিস্টসের বার্ষিক সাধারণ সভা অনুষ্ঠিত
+
+                                            </h2>
+
+                                        </a>
+
+                                        <p class="todays-news-summary">
+                                            পেশাগত মর্যাদা বৃদ্ধি ও সাংগঠনিক কার্যক্রমকে আরও গতিশীল করার প্রত্যয় নিয়ে স্পিচ অ্যান্ড ল্যাঙ্গুয়েজ থেরাপি চিকিৎসকদের জাতীয় পেশাজীবী সংগঠন সোসাইটি অব স্পিচ অ্যান্ড ল্যাঙ্গুয়েজ থেরাপিস্ট’র (এসএসএলটি) বার্ষিক সাধারণ সভা অনুষ্ঠিত হয়েছে। শুক্রবার (১০ জুলাই) সাভারের সিআরপিতে অনুষ্ঠিত সভায় সংগঠন
+
+                                        <div class="todays-news-meta">
+
+                                            <span>১২ জুলাই ২০২৬, ০৫:১৮ পিএম</span>
+
+                                            <span class="news-dot">|</span>
+
+                                            <span>খেলা</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT -->
+
+                                <div class="col-md-4">
+
+                                    <a href="#">
+
+                                        <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost835e2e31-7b54-4d76-96ae-a11d9b62c0df.jpg"
+                                            class="img-fluid todays-news-image"
+                                            alt="">
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+                            <div class="pb-4 border-bottom"></div>
+
+                        </article>
+                            
+
+                        <div class="todays-news-load-more">
+
+                            <button class="todays-news-btn">
+
+                                আরও দেখুন
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 border-top border-secondary mt-5">
+        <div class="container pb-5 position-relative">
+        <div class="d-flex flex-column align-items-center align-items-lg-start gap-3 mb-4">
+            <a href="index.html" class="d-block">
+            <img alt="logo" width="190" height="40" src="logo.png" class="img-fluid">
+            </a>
+            
+            
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a class="footer-link" href="#">যোগাযোগ</a>
+                <a class="footer-link" href="#">পরিচয়</a>
+                <a class="footer-link" href="#">গোপনীয়তা নীতিমালা</a>
+                <a class="footer-link" href="#">ব্যবহারের শর্তাবলি</a>
+                <a class="footer-link" href="#">কোড অব এথিক্স</a>
+                <a class="footer-link" href="#">সংশোধনী ও স্বচ্ছতা নীতিমালা</a>
+                <a class="footer-link" href="#">বিজ্ঞাপন নীতিমালা</a>
+            </div>
+        </div>
+
+        <div class="border-top pt-4 d-flex flex-column gap-2">
+            <div class="text-dark fw-bold text-center text-md-start fs-4">সম্পাদক ও প্রকাশক: পলাশ মাহমুদ</div>
+            
+            <button id="scrollToTopBtn" class="btn btn-outline-secondary rounded-circle position-absolute end-0 bottom-0 mb-3 me-3" aria-label="Scroll to top" style="width: 40px; height: 40px; padding: 0;">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="m112 328 144-144 144 144"></path>
+            </svg>
+            </button>
+
+            <div class="text-sm fw-semibold text-center text-lg-start">© সর্বস্বত্ব স্বত্বাধিকার সংরক্ষিত ২০২৬</div>
+        </div>
+        </div>
+    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const scrollToTopBtn = document.querySelector('#scrollToTopBtn');
+
+    window.addEventListener('scroll', () => {
+    // Show button after scrolling down 300px
+    if (window.scrollY > 300) {
+        scrollToTopBtn.style.display = 'flex';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+    });
+
+    // Smooth scroll to top when clicked
+    scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    });
+  </script>
+
+  <script>
+  // Custom JavaScript for Asia Post
+  document.addEventListener('DOMContentLoaded', () => {
+      console.log('Asia Post loaded successfully');
+      
+      // Add any interactive features here
+      // Example: Search button click handler
+      const searchBtn = document.getElementById('searchBtn');
+      if (searchBtn) {
+          searchBtn.addEventListener('click', () => {
+              alert('Search feature coming soon!');
+          });
+      }
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Post: Dhaka Based Bangla News Portal</title>
+    <meta name="description" content="Asia Post is a fast-growing news and multimedia portal delivering the latest news, sports, entertainment, opinion, and video content in both Bengali and English.">
+
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+<div style="position: sticky; top: 0; z-index: 1060;">
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="header-wrapper">
+
+                <!-- LEFT -->
+                <div class="header-left">
+
+                    <button
+                        class="btn-clean menu-btn"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navMenu"
+                        aria-label="Menu">
+
+                        <svg width="24" height="24" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <!-- CENTER -->
+
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Asia Post Logo">
+                    </a>
+                </div>
+
+                <!-- RIGHT -->
+
+                <!-- Action Buttons (Right Aligned) -->
+                <div class="header-right">
+                    <!-- Search Icon -->
+                    <button class="btn-clean" aria-label="Search">
+                        <svg height="20" width="20" viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Language Link -->
+                    <a href="/english" class="text-decoration-none text-dark fw-semibold fs-5">
+                        <span class="desktop-text text-secondary-custom">English</span>
+                        <span class="mobile-text text-secondary-custom">EN</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="desktop-navbar navbar navbar-expand-lg border-top border-bottom bg-white">
+
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a href="todays-news.html"
+                        class="nav-link active-page">
+                            সর্বশেষ
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="shorts">সংক্ষেপ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kotha">কথা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bangladesh">বাংলাদেশ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="politics">রাজনীতি</a></li>
+                    <li class="nav-item"><a class="nav-link" href="country-news">সারাদেশ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="world">বিশ্ব</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ap-special">স্পেশাল</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sports">খেলা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="entertainment">বিনোদন</a></li>
+                    <li class="nav-item"><a class="nav-link" href="business-news">বাণিজ্য</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education">শিক্ষা</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lifestyle">জীবন</a></li>
+                    <li class="nav-item"><a class="nav-link" href="opinion">মতামত</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video">ভিডিও</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+</div>
+
+    <!-- Main Content -->
+    <main class="news-page">
+
+        <div class="container">
+
+            <div class="news-layout">
+
+                <!-- ================= LEFT ARTICLE ================= -->
+
+                <article class="news-article">
+
+                    <!-- Header -->
+                    <header class="article-header">
+
+                        <div class="article-category text-secondary-custom2">
+                            <a href="#">সারা দেশ</a>
+                        </div>
+
+                        <div class="article-highlight">
+                            ফরিদপুরে বাস দুর্ঘটনায় নিহত ৫
+                        </div>
+
+                        <h1 class="article-title text-secondary-custom1">
+                            সাড়ে পাঁচ ঘণ্টা পর ঢাকা-খুলনা মহাসড়কে যান চলাচল শুরু
+                        </h1>
+
+                        <div class="article-meta">
+
+                            <div class="meta-left">
+
+                                <span class="text-secondary-custom3 px-2">
+                                    <i class="bi bi-pencil-square"></i>
+                                    এশিয়া পোস্ট ডেস্ক, ফরিদপুর
+                                </span>
+                                <span class="text-secondary-custom3">
+                                    <i class="bi bi-calendar3"></i>
+                                    ১২ জুলাই ২০২৬, ০১:৩৬ এএম
+                                </span>
+
+                            </div>
+
+                            <div class="meta-right">
+
+                                <button class="share-btn">
+                                    <i class="bi bi-facebook"></i>
+                                </button>
+
+                                <button class="share-btn">
+                                    <i class="bi bi-whatsapp"></i>
+                                </button>
+
+                                <button class="share-btn">
+                                    <i class="bi bi-link-45deg"></i>
+                                </button>
+
+                                <button class="share-btn">
+                                    <i class="bi bi-printer"></i>
+                                </button>
+
+                                <button class="summary-btn">
+                                    সংক্ষেপ
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </header>
+
+                    <!-- Hero Image -->
+
+                    <figure class="hero-image">
+
+                        <img
+                            src="https://images.asia-post.com/original_images/NewsLabAsiaPost50054c52-e025-4c21-a5f2-86b96c10bce3.jpg"
+                            alt="">
+
+                        <figcaption class="text-secondary-custom0">
+
+                            ফরিদপুরে বাস চলাচল শুরু। ছবি: সংগৃহীত
+
+                        </figcaption>
+
+                    </figure>
+
+                        <div class="article-content">
+
+                            <p class="text-secondary-custom3" >
+                                ফরিদপুরের ভাঙ্গা বাসস্ট্যান্ড চাঁপার ঢালে ৫ জন নিহতের ঘটনায় বিক্ষুব্ধ
+                                এলাকাবাসীর অবরোধে ৫ ঘণ্টারও বেশি সময় বন্ধ থাকার পর ঢাকা-খুলনা
+                                মহাসড়কে যান চলাচল শুরু হয়েছে।
+                            </p>
+
+                            <p class="text-secondary-custom3">
+                                শনিবার (১১ জুলাই) রাত ১১টা ২০ মিনিটের দিকে প্রায় পাঁচ ঘণ্টা পর যান
+                                চলাচল স্বাভাবিক হয়। এর আগে সকাল সাড়ে ৬টা থেকে মহাসড়কটি বন্ধ ছিল।
+                            </p>
+
+                            <p class="text-secondary-custom3">
+                                ভাঙ্গা হাইওয়ে পুলিশের সূত্রে জানা গেছে, ঘাতক বাসের চালককে আটক করতে
+                                পুলিশ অভিযান চালাচ্ছে। স্থানীয়দের অভিযোগ, অতিরিক্ত গতির কারণে
+                                দুর্ঘটনাটি ঘটে।
+                            </p>
+
+                            <!-- floating recommendation -->
+
+                            <aside class="inline-card">
+                                <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost15881897-0958-433f-ace1-d1a9ae81bed5.jpg" alt="Description" style="width: 100%; display: block;">
+
+                                <div class="inline-overlay">
+
+                                    <h5>
+                                        ফরিদপুরে গাড়িচাপায় প্রাণ শিক্ষকের
+                                        বাবার, নিহত ৫
+                                    </h5>
+
+                                    <a href="news-001.html" 
+                                    class="btn btn-light border-0 shadow-sm" 
+                                    style="background-color: #ffffff; color: #333; font-weight: 600; padding: 5px auto; text-decoration: none; border-radius: 4px; display: inline-block;">
+                                        আরও পড়ুন
+                                    </a>
+                                    
+                                </div>
+
+                            </aside>
+
+                            <p class="text-secondary-custom3">
+                                এ ঘটনায় আহত আরও কয়েকজনকে হাসপাতালে ভর্তি করা হয়েছে। পুলিশ ঘটনাস্থল
+                                পরিদর্শন করেছে এবং তদন্ত শুরু করেছে।
+                            </p>
+
+                            <p class="text-secondary-custom3">
+                                পরে স্থানীয় প্রশাসনের সঙ্গে আলোচনা শেষে অবরোধ তুলে নেওয়া হলে রাত
+                                সাড়ে ১১টার দিকে যান চলাচল স্বাভাবিক হয়।
+                            </p>
+
+                            <p class="text-secondary-custom3">
+                                পুলিশ জানিয়েছে, ঘাতক বাসটি জব্দ করা হয়েছে এবং চালককে আটকের চেষ্টা
+                                চলছে।
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                <!-- ================= RIGHT SIDEBAR ================= -->
+
+                <aside class="news-sidebar">
+
+                    <div class="sidebar-ad"></div>
+
+                    <section class="sidebar-news">
+
+                        <h3 class="text-secondary-custom1">সারাদেশ থেকে আরও</h3>
+
+                        <div class="sidebar-item">
+
+                            <img src="https://images.asia-post.com/original_images/NewsLabAsiaPostdc175ffc-346c-4fb1-ba67-ba4d500fa9c6.jpg">
+
+                            <div>
+
+                                <h5>
+                                    ১০ দিন পর সেন্টমার্টিনে ফিরলেন ১৫৯ জেলেপল্লী
+                                </h5>
+
+                                <small>১ ঘণ্টা আগে</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-item">
+
+                            <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost3347b56f-49ed-4675-a514-a2277cf62eea.jpg">
+
+                            <div>
+
+                                <h5>
+                                    বৃষ্টিপাতে নদীর পানি বেড়েছে
+                                </h5>
+
+                                <small>২ ঘণ্টা আগে</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-item">
+
+                            <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost18aa36c1-7e7c-4822-96c3-1573c18c3f63.webp">
+
+                            <div>
+
+                                <h5>
+                                    মাছ ধরতে গিয়ে নিখোঁজ
+                                </h5>
+
+                                <small>৩ ঘণ্টা আগে</small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="sidebar-item">
+
+                            <img src="https://images.asia-post.com/original_images/NewsLabAsiaPost28972773-5bdf-4322-aaad-13db85332f03.jpg">
+
+                            <div>
+
+                                <h5>
+                                    ঘূর্ণিঝড়ের সতর্কতা জারি
+                                </h5>
+
+                                <small>৪ ঘণ্টা আগে</small>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </aside>
+
+            </div>
+
+            <!-- ================= BOTTOM NEWS ================= -->
+
+            <section class="bottom-news">
+
+                <!-- LEFT -->
+
+                <div class="news-list-column">
+
+                    <h2 class="text-secondary-custom1">সর্বশেষ</h2>
+
+                    <ul class="news-list">
+
+                        <li>
+                            <span class="serial">১</span>
+                            <a href="#">হয়রানু প্রমাণিত সনদ করতে ওয়ানদের নতুন প্রস্তাব</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">২</span>
+                            <a href="#">বেলিংহামের জোড়া গোলে সেমিফাইনালে পথে ইংল্যান্ড</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">৩</span>
+                            <a href="#">এশিয়াতেও নিউজ ঘরে রাজত্ব পালন না করার</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">৪</span>
+                            <a href="#">১০ দিন পর সেন্টমার্টিনে ফিরলেন ১৫৯ দ্বীপবাসী</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">৫</span>
+                            <a href="#">জার্মানির কোচ হতে রাল্ফ রং</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="slider-nav">
+
+                        <button class="prev-btn">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <button class="next-btn">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="news-list-column">
+
+                    <h2 class="text-secondary-custom1">সর্বাধিক পঠিত</h2>
+
+                    <ul class="news-list">
+
+                        <li>
+                            <span class="serial">১</span>
+                            <a href="#">না ফেরার দেশে আলজেরিয়ান ফুটবল কিংবদন্তি</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">২</span>
+                            <a href="#">পুরুষের এই সমস্যাকে অবহেলা নয়, হতে পারে বড় রোগের ইঙ্গিত</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">৩</span>
+                            <a href="#">বিদায়ের পরও সুদূরে গেল ব্রাজিল</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">৪</span>
+                            <a href="#">মায়ের নদী থেকে ফেরি ফিরিয়ে আনলেন এমপি হানান মাসউদ</a>
+                        </li>
+
+                        <li>
+                            <span class="serial">৫</span>
+                            <a href="#">বৃষ্টিতে ভেজার পর এই ভুলগুলো করবেন না, জানুন জরুরি পরামর্শ</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="slider-nav">
+
+                        <button class="prev-btn">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+
+                        <button class="next-btn">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 border-top border-secondary mt-5">
+        <div class="container pb-5 position-relative">
+        <div class="d-flex flex-column align-items-center align-items-lg-start gap-3 mb-4">
+            <a href="index.html" class="d-block">
+            <img alt="logo" width="190" height="40" src="logo.png" class="img-fluid">
+            </a>
+            
+            
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a class="footer-link" href="#">যোগাযোগ</a>
+                <a class="footer-link" href="#">পরিচয়</a>
+                <a class="footer-link" href="#">গোপনীয়তা নীতিমালা</a>
+                <a class="footer-link" href="#">ব্যবহারের শর্তাবলি</a>
+                <a class="footer-link" href="#">কোড অব এথিক্স</a>
+                <a class="footer-link" href="#">সংশোধনী ও স্বচ্ছতা নীতিমালা</a>
+                <a class="footer-link" href="#">বিজ্ঞাপন নীতিমালা</a>
+            </div>
+        </div>
+
+        <div class="border-top pt-4 d-flex flex-column gap-2">
+            <div class="text-dark fw-bold text-center text-md-start fs-4">সম্পাদক ও প্রকাশক: পলাশ মাহমুদ</div>
+            
+            <button id="scrollToTopBtn" class="btn btn-outline-secondary rounded-circle position-absolute end-0 bottom-0 mb-3 me-3" aria-label="Scroll to top" style="width: 40px; height: 40px; padding: 0;">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="m112 328 144-144 144 144"></path>
+            </svg>
+            </button>
+
+            <div class="text-sm fw-semibold text-center text-lg-start">© সর্বস্বত্ব স্বত্বাধিকার সংরক্ষিত ২০২৬</div>
+        </div>
+        </div>
+    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    const scrollToTopBtn = document.querySelector('#scrollToTopBtn');
+
+    window.addEventListener('scroll', () => {
+    // Show button after scrolling down 300px
+    if (window.scrollY > 300) {
+        scrollToTopBtn.style.display = 'flex';
+    } else {
+        scrollToTopBtn.style.display = 'none';
+    }
+    });
+
+    // Smooth scroll to top when clicked
+    scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    });
+  </script>
+
+  <script>
+  // Custom JavaScript for Asia Post
+  document.addEventListener('DOMContentLoaded', () => {
+      console.log('Asia Post loaded successfully');
+      
+      // Add any interactive features here
+      // Example: Search button click handler
+      const searchBtn = document.getElementById('searchBtn');
+      if (searchBtn) {
+          searchBtn.addEventListener('click', () => {
+              alert('Search feature coming soon!');
+          });
+      }
+  });
+  </script>
+
+</body>
+</html>
