@@ -2309,5 +2309,30 @@
         });
     }
 </script>
+<script>
+    (function() {
+    const menuBtn = document.querySelector('.menu-btn');
+    const headerLeft = document.querySelector('.header-left');
+    const headerRight = document.querySelector('.header-right');
+
+    function handleHeaderLayout() {
+        if (window.innerWidth > 991) {
+            // Desktop Mode: Move to the start of header-right
+            if (menuBtn.parentElement !== headerRight) {
+                headerRight.insertBefore(menuBtn, headerRight.firstChild);
+            }
+        } else {
+            // Mobile Mode: Move back to header-left
+            if (menuBtn.parentElement !== headerLeft) {
+                headerLeft.appendChild(menuBtn);
+            }
+        }
+    }
+
+    // Run on load and on resize
+    window.addEventListener('resize', handleHeaderLayout);
+    handleHeaderLayout();
+})();
+</script>
 </body>
 </html>

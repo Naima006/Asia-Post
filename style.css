@@ -580,6 +580,14 @@ img.img-fluid {
     border-color: #d1d5dc !important;
 }
 
+.text-language {
+    color: #000000 !important;
+    text-shadow: 0.5px 0 0 #000000, -0.5px 0 0 #000000;
+    font-weight: 900;
+    font-size: 22px;
+
+}
+
 .text-secondary-custom {
     color: #464646 !important;
     text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646;
@@ -697,6 +705,14 @@ img.img-fluid {
 .text-dark-custom {
     color: #374151;
 }
+.text-bold-custom {
+    color: #000000;
+    font-size: large !important;
+    font-weight: 900 !important;
+    text-shadow: 0.25px 0 0 #000000, -0.25px 0 0 #000000;
+    
+}
+
 
 #ap-slider {
     display: flex;
@@ -831,6 +847,22 @@ img.img-fluid {
     font-weight: 600;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust spacing between buttons */
+    justify-content: flex-end;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .menu-btn {
+    margin-right: 5px;
+}
+
 /* Share Buttons */
 .share-btn{
 
@@ -890,6 +922,15 @@ img.img-fluid {
         background: #fff;
     }
 }
+
+@media (min-width: 992px) {
+    .header-wrapper { display: flex; }
+    .header-left { order: 1; }
+    .header-logo { order: 2; }
+    .menu-btn    { order: 3; } /* Moves it after logo */
+    .header-right { order: 4; }
+}
+
 
 /* Quote Card Lift Effect */
 .hover-lift {
@@ -1095,6 +1136,10 @@ img.img-fluid {
 .border-top {
     border-top: 1px solid #dee2e6 !important;
 }
+.border-top-footer {
+    border-top: 1px solid #000000 !important;
+}
+
 
 /* Category header border thickness */
 h3.fw-bold {
@@ -1514,7 +1559,7 @@ h3.fw-bold {
 
 .country-feature:hover .country-feature-title:hover{
 
-    color:#0b51c5;
+    color:#0055df !important;
 
 }
 
@@ -1650,7 +1695,7 @@ h3.fw-bold {
 
 .country-grid-card:hover .country-grid-title{
 
-    color:#1d5fd2;
+    color:#1d5fd2 !important;
 
 }
 
@@ -3405,3 +3450,121 @@ margin-top:24px;
 
 }
 
+@media (min-width: 1024px) {
+  html {
+    zoom: 1.1 !important;
+  }
+}
+
+/* ===============================
+   Footer Styles (Responsive)
+=============================== */
+
+/* Policy Links (Top) */
+.footer-nav-links a {
+    color: #4b5563; 
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    line-height: 1;
+}
+
+.footer-nav-links a:hover {
+    color: #0d6efd; 
+}
+
+/* Extra Bottom Links */
+.footer-extra-link {
+    color: #4b5563;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-extra-link:hover {
+    color: #0d6efd;
+}
+
+/* Scroll To Top Button Base Styling */
+.scroll-top-btn {
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    display: none; /* Controlled by your JS */
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #d1d5db; 
+    background-color: #ffffff;
+    color: #374151; 
+    transition: background-color 0.2s ease;
+    z-index: 50;
+    cursor: pointer;
+    padding: 0;
+}
+
+.scroll-top-btn:hover {
+    background-color: #f3f4f6; 
+}
+
+/* Desktop & Tablet specific layouts */
+@media (min-width: 768px) {
+    /* Create the vertical dividing lines between links */
+    .footer-nav-links {
+        gap: 0;
+        /* Ensures the links wrap nicely if the screen is narrow */
+        row-gap: 0.5rem; 
+    }
+    
+    .footer-nav-links a {
+        /* Increased horizontal padding to 1.5rem (24px) for more breathing room */
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        /* Added vertical padding to ensure spacing when they wrap */
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        border-right: 1px solid #9ca3af; 
+    }
+    
+    .footer-nav-links a:first-child {
+        padding-left: 0;
+    }
+    
+    .footer-nav-links a:last-child {
+        border-right: none;
+    }
+    
+    /* Slightly nudge the scroll button inward on larger screens */
+    .scroll-top-btn {
+        right: 30px;
+    }
+}
+
+/* Mobile specific layout */
+@media (max-width: 767px) {
+    /* Remove borders and use a cloud-like gap */
+    .footer-nav-links {
+        gap: 0.5rem 1rem; 
+    }
+    .footer-nav-links a {
+        border-right: none; 
+        padding: 0;
+    }
+}
+
+/* Ensure the menu button comes first */
+.header-right .menu-btn {
+    order: 1 !important;
+}
+
+/* Ensure the search button comes second */
+.header-right button.btn-clean:not(.menu-btn) {
+    order: 2 !important;
+}
+
+/* Ensure the English button comes last */
+.header-right a.text-decoration-none {
+    order: 3 !important;
+}
