@@ -624,6 +624,8 @@ img.img-fluid {
     font-size: 16px;
 }
 
+
+
 .text-muted-custom {
     color: #cccccc !important;
 }
@@ -2820,7 +2822,7 @@ h3.fw-bold {
 
 }
 
-.news-layout{
+/*.news-layout{
 
     display:grid;
 
@@ -2829,8 +2831,17 @@ h3.fw-bold {
     gap:32px;
 
     justify-content:center;
+}*/
 
+.news-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 728px) 300px;
+    gap: 32px;
+    justify-content: center;
+    max-width: 100%; 
+    padding: 0 60px;
 }
+
 
 .news-article{
 
@@ -2854,9 +2865,10 @@ h3.fw-bold {
 
     text-decoration:none;
 
-    color:#4a4a4a;
+    color:#686868 !important;
+    text-shadow: 0.25px 0 0 #686868, -0.25px 0 0 #686868 !important;
 
-    font-size:19px;
+    font-size:20px;
 
     font-weight:700;
 
@@ -2874,17 +2886,25 @@ h3.fw-bold {
 
 }
 
-.article-title{
 
-    font-size:46px;
+.article-header h1{
+
+    text-decoration:none;
+
+    color:#464646 !important;
+    text-shadow: 0.5px 0 0 #464646, -0.5px 0 0 #464646 !important;
+
+    font-size:36px;
 
     line-height:1.28;
 
-    font-weight:700;
+    font-weight:900;
 
     letter-spacing:-.2px;
 
+
 }
+
 
 .article-meta{
 
@@ -3043,28 +3063,33 @@ ARTICLE BODY
 .article-content{
 
     margin-top:28px;
+    padding-right: 30px;
+    padding-left: 30px;
 
 }
 
 .article-content p{
 
-    font-size:28px;
+    font-size:16px !important;
 
-    line-height:1.95;
+    font-weight: 700;
+
+    line-height:1.2;
 
     color:#404040;
 
-    margin-bottom:18px;
+    margin-bottom:10px;
 
     text-align:left;
 
 }
 
+
 /* floating blue card */
 
 .inline-card{
 
-    width:310px;
+    width:300px;
 
     float:right;
 
@@ -3108,7 +3133,7 @@ ARTICLE BODY
 
     line-height:1.5;
 
-    font-size:19px;
+    font-size:16px;
 
     font-weight:700;
 
@@ -3133,6 +3158,8 @@ RIGHT SIDEBAR
     text-align:center;
 
     font-size:23px;
+
+    text-shadow: 0.25px 0 0 #464646, -0.25px 0 0 #464646 !important;
 
     font-weight:700;
 
@@ -3168,6 +3195,9 @@ RIGHT SIDEBAR
 
     font-size:15px;
 
+    color: #464646 !important;
+    text-shadow: 0.25px 0 0 #464646, -0.25px 0 0 #464646;
+
     line-height:1.45;
 
     font-weight:700;
@@ -3177,6 +3207,8 @@ RIGHT SIDEBAR
 .sidebar-item small{
 
     color:#777;
+    font-size: 12px;
+    font-weight: 700;
 
 }
 
@@ -3214,16 +3246,20 @@ BOTTOM NEWS
 BOTTOM SECTION (PIXEL MATCH)
 ==================================================*/
 
-.bottom-news{
+.bottom-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 72px;
+    column-gap: 64px;
+    padding: 0 30px;
+}
 
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    margin-top:72px;
-
-    column-gap:64px;
-
+@media(max-width: 991px) {
+    .bottom-news {
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+        padding: 0 30px;
+    }
 }
 
 .news-list-column{
@@ -3256,7 +3292,7 @@ BOTTOM SECTION (PIXEL MATCH)
 
     margin:0 0 34px;
 
-    font-size:34px;
+    font-size:28px;
 
     font-weight:700;
 
@@ -3267,6 +3303,8 @@ BOTTOM SECTION (PIXEL MATCH)
 .news-list{
 
     list-style:none;
+
+    color:#333;
 
     margin:0;
 
@@ -3279,11 +3317,19 @@ BOTTOM SECTION (PIXEL MATCH)
     display:flex;
 
     align-items:flex-start;
+    
 
-    gap:22px;
+    gap:5px;
 
     margin-bottom:34px;
 
+}
+
+.news-list li > a {
+    display:flex;
+
+    align-items:flex-start;
+     text-shadow: 0.25px 0 0 #464646, -0.25px 0 0 #464646;
 }
 
 .serial{
@@ -3344,7 +3390,7 @@ BOTTOM SECTION (PIXEL MATCH)
 
     border:none;
 
-    padding:0;
+    padding:10px;
 
     font-size:44px;
 
@@ -3455,6 +3501,8 @@ margin-top:24px;
     zoom: 1.1 !important;
   }
 }
+
+
 
 /* ===============================
    Footer Styles (Responsive)
@@ -3567,4 +3615,28 @@ margin-top:24px;
 /* Ensure the English button comes last */
 .header-right a.text-decoration-none {
     order: 3 !important;
+}
+
+@media print {
+  /* Hide all elements on the page */
+  body * {
+    visibility: hidden;
+  }
+
+  .article-meta {
+    display: none !important;
+  }
+  /* Specifically show the article and everything inside it */
+  article.news-article, 
+  article.news-article * {
+    visibility: visible;
+  }
+
+  /* Ensure the article starts at the top-left of the printed page */
+  article.news-article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
